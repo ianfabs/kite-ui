@@ -1,0 +1,17 @@
+/* Helper classes for element UI */
+
+/* Links */
+.el-link{
+    color: #303133;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.el-link:active{
+    color: #303133;
+}
+.el-link:visited{
+    color: #303133;
+}
+.el-link:hover{
+    color: #409EFF;
+}
