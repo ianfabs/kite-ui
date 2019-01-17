@@ -8,7 +8,22 @@ import './plugins/font-awesome'
 import './assets/helper.css'
 import './assets/element-plus.css'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+Vue.directive('to', {
+  // When the bound element is inserted into the DOM...
+  inserted: function (el, bin, vnode) {
+    el.addEventListener("click", (event)=>{
+      try{
+        router.push(bin.value);
+      }catch(error){
+        console.group("v-to");
+        console.log(error);
+        console.groupEnd("v-to");
+      }
+    });
+  }
+})
 
 new Vue({
   router,
