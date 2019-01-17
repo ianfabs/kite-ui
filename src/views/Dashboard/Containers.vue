@@ -5,6 +5,7 @@
     v-for="container in containers" 
     :key="container.name"
     shadow="hover"
+    v-draggable
     >
       <div slot="header" class="el-card-header clearfix text-align-left">
         {{container.name}}

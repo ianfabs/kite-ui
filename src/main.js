@@ -13,6 +13,7 @@ Vue.config.productionTip = false;
 Vue.directive('to', {
   // When the bound element is inserted into the DOM...
   inserted: function (el, bin, vnode) {
+    el.tabindex="1";
     el.addEventListener("click", (event)=>{
       try{
         router.push(bin.value);

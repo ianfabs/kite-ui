@@ -16,21 +16,32 @@
         @close="handleClose"
         :collapse="isCollapse"
       >
-        <el-menu-item index="1">
-          <fa-icon icon="cubes" size="md" />
-          <span slot="title" class="ml-1">Containers</span>
+        <router-link to="containers" class="el-link">
+          <el-menu-item index="1">
+            <fa-icon icon="cube" size="lg" class="mr-1"/>
+            <span slot="title">Containers</span>
+          </el-menu-item>
+        </router-link>
+        <el-menu-item index="2" v-to="'editor'">
+          <fa-icon icon="file" size="lg" class="mr-1"/>
+          <span slot="title">Editor</span>
         </el-menu-item>
-        <el-menu-item index="2">
-          <fa-icon icon="file" size="md" />
-          <span slot="title" class="ml-1">&nbsp;Editor</span>
-        </el-menu-item>
-        <el-menu-item index="3">
-          <fa-icon icon="cog" size="md"/>
-          <span slot="title" class="ml-1">Settings</span>
-        </el-menu-item>
+        <el-submenu index="3">
+          <template slot="title">
+            <fa-icon icon="cog" size="lg" class="mr-1"/>
+            <span slot="title">Settings</span>
+          </template>
+          <el-menu-item-group>
+            <span slot="title">Settings</span>
+            <el-menu-item index="1-1">
+              Dark Theme
+              <el-switch v-model="dark" class="ml-4"></el-switch>
+            </el-menu-item>
+          </el-menu-item-group>
+        </el-submenu>
         <el-menu-item index="4">
-          <fa-icon icon="sign-out-alt" size="md"/>
-          <span slot="title" class="ml-1">Logout</span>
+          <fa-icon icon="sign-out-alt" size="lg" class="mr-1"/>
+          <span slot="title">Logout</span>
         </el-menu-item>
       </el-menu>
       <el-container>
@@ -49,7 +60,8 @@ export default {
   data() {
     return {
       isCollapse: true,
-      activeIndex: 0
+      activeIndex: 0,
+      dark: false
     };
   },
   methods: {
