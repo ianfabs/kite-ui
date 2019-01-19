@@ -10,19 +10,19 @@ These are helper classes
 .m-4{ margin: 4em; }
 .m-5{ margin: 4em; }
 
-.my-0{ margin: 0 auto; }
-.my-1{ margin: 1em auto; }
-.my-2{ margin: 2em auto; }
-.my-3{ margin: 3em auto; }
-.my-4{ margin: 4em auto; }
-.my-5{ margin: 4em auto; }
+.my-0{ margin: 0 initial; }
+.my-1{ margin: 1em initial; }
+.my-2{ margin: 2em initial; }
+.my-3{ margin: 3em initial; }
+.my-4{ margin: 4em initial; }
+.my-5{ margin: 4em initial; }
 
-.mx-0{ margin: auto 0 ; }
-.mx-1{ margin: auto 1em ; }
-.mx-2{ margin: auto 2em ; }
-.mx-3{ margin: auto 3em ; }
-.mx-4{ margin: auto 4em ; }
-.mx-5{ margin: auto 4em ; }
+.mx-0{ margin: initial 0 ; }
+.mx-1{ margin: initial 1em ; }
+.mx-2{ margin: initial 2em ; }
+.mx-3{ margin: initial 3em ; }
+.mx-4{ margin: initial 4em ; }
+.mx-5{ margin: initial 4em ; }
 
 .mb-0{ margin-bottom: 0; }
 .mb-1{ margin-bottom: 1em; }
@@ -60,19 +60,19 @@ These are helper classes
 .p-4{ padding: 4em; }
 .p-5{ padding: 4em; }
 
-.py-0{ padding: 0 auto; }
-.py-1{ padding: 1em auto; }
-.py-2{ padding: 2em auto; }
-.py-3{ padding: 3em auto; }
-.py-4{ padding: 4em auto; }
-.py-5{ padding: 4em auto; }
+.py-0{ padding: 0 initial; }
+.py-1{ padding: 1em initial; }
+.py-2{ padding: 2em initial; }
+.py-3{ padding: 3em initial; }
+.py-4{ padding: 4em initial; }
+.py-5{ padding: 4em initial; }
 
-.px-0{ margin: auto 0 ; }
-.px-1{ padding: auto 1em ; }
-.px-2{ padding: auto 2em ; }
-.px-3{ padding: auto 3em ; }
-.px-4{ padding: auto 4em ; }
-.px-5{ padding: auto 4em ; }
+.px-0{ margin: initial 0 ; }
+.px-1{ padding: initial 1em ; }
+.px-2{ padding: initial 2em ; }
+.px-3{ padding: initial 3em ; }
+.px-4{ padding: initial 4em ; }
+.px-5{ padding: initial 4em ; }
 
 .pb-0{ padding-bottom: 0; }
 .pb-1{ padding-bottom: 1em; }
