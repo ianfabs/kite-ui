@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Editor from './views/Editor.vue'
 import Login from './views/Login.vue'
 import Containers from './views/Dashboard/Containers.vue'
 
@@ -16,9 +16,9 @@ export default new Router({
       component: Login
     },
     {
-      path: '/login',
-      name: 'login',
-      component: Login
+      path: '/editor',
+      name: 'editor',
+      component: Editor
     },
     {
       path: '/containers',
