@@ -71,7 +71,6 @@
 
 <script>
 import FileUpload from "@/components/FileUpload.vue";
-import FileList from "@/components/FileList.vue";
 
 export default {
   data(){
@@ -104,7 +103,6 @@ export default {
   },
   components: {
     FileUpload,
-    FileList,
   }
 };
 </script>
