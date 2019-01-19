@@ -16,12 +16,10 @@
         @close="handleClose"
         :collapse="isCollapse"
       >
-        <router-link to="containers" class="el-link">
-          <el-menu-item index="1">
-            <fa-icon icon="cube" size="lg" class="mr-1"/>
-            <span slot="title">Containers</span>
-          </el-menu-item>
-        </router-link>
+        <el-menu-item index="1" v-to="'containers'">
+          <fa-icon icon="cube" size="lg" class="mr-1"/>
+          <span slot="title">Containers</span>
+        </el-menu-item>
         <el-menu-item index="2" v-to="'editor'">
           <fa-icon icon="file" size="lg" class="mr-1"/>
           <span slot="title">Editor</span>
